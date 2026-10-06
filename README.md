@@ -2,18 +2,18 @@
 
 ## How do I install these Casks?
 
-Add this tap by executing 
-```
-brew tap qbittorrent/qbittorrent https://github.com/qbittorrent/qBittorrent
+Add this tap by executing: 
+```bash
+brew tap qbittorrent/qbittorrent
 ```
 
-And then install qBittorrent Cask:
-```
+And then install the qBittorrent Cask:
+```bash
 brew install qbittorrent/qbittorrent/qbittorrent
 ```
 
 Subsequently given lack of notarization it's necessary to get rid of [Gatekeeper](https://en.wikipedia.org/wiki/Gatekeeper_(macOS)) complaints:
-```
+```bash
 xattr -rd com.apple.quarantine /Applications/qBittorrent.app
 ```
 
